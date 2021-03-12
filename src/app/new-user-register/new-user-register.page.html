@@ -1,0 +1,42 @@
+<ion-content>
+  <ion-grid class="">
+    <!--LOGO PANEL START-->
+    <ion-row>      
+      <IonCol size="12" size-sm class="register-panel">
+        <p>New User Registration</p>
+        <form [formGroup]="signupForm">
+        <ion-item class="form-input">
+          <img alt="icon" title="icon" class="form-input-icon" src="../assets/user.png">
+          <ion-input type="text" placeholder="Name" inputmode="text"></ion-input>
+        </ion-item>
+        <ion-item class="form-input">
+          <img alt="icon" title="icon" class="form-input-icon" src="../assets/user.png">
+          <ion-input type="email" placeholder="Email ID" inputmode="text"></ion-input>
+        </ion-item>
+        <ion-item class="form-input">
+          <img alt="icon" title="icon" class="form-input-icon" src="../assets/user.png">
+          <ion-input type="phone" placeholder="Phone No" inputmode="text"></ion-input>
+        </ion-item>
+        <ion-item class="form-input">        
+          <img alt="icon" title="icon" class="form-input-icon" src="../assets/unlock.png">
+          <ion-input type="password" placeholder="Create Pin" inputmode="text"></ion-input>
+        </ion-item>
+        <ion-item class="form-input">
+          <img alt="icon" title="icon" class="form-input-icon" src="../assets/unlock.png">
+          <ion-input type="password" placeholder="Confirm pin" inputmode="text"></ion-input>
+        </ion-item>
+        <div class="text-border-section">     
+          <p>Confirm your Location for access</p>
+        </div>
+        <ion-button expand="full" fill="outline" class="full-button-withicon" [routerLink]="['/gateway']">
+          <img alt="sensor" title="sensor" src="../assets/map-pin.png">
+          LOCATION
+        </ion-button>        
+        <ion-button expand="block" class="full-button" [routerLink]="['/gateway']">          
+          SUBMIT 
+        </ion-button>
+      </form>
+      </IonCol>
+    </ion-row>
+  </ion-grid>    
+</ion-content>

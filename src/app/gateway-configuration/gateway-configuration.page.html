@@ -1,0 +1,69 @@
+<ion-header>
+	<div class="new-header">
+		<ion-toolbar>			
+				<span class="back" [routerLink]="['/gateway-onboarding']"><ion-icon name="arrow-back-outline"></ion-icon></span>
+				<span class="filter"><ion-icon name="notifications"></ion-icon></span>			
+		</ion-toolbar>
+	</div>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="">
+    <!--LOGO PANEL START-->
+    <ion-row>      
+      <IonCol size="12" size-sm class="register-panel">
+        <h2>Gateway<br> Configuration</h2>
+        <p class="center-text">Select your device and use password</p>
+        <form [formGroup]="signupForm">
+        <ion-item class="form-input">   
+          <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+            <ion-select-option value="brown">Brown</ion-select-option>
+            <ion-select-option value="blonde">Blonde</ion-select-option>
+            <ion-select-option value="black">Black</ion-select-option>
+            <ion-select-option value="red">Red</ion-select-option>
+          </ion-select>   
+          
+        </ion-item>        
+        <ion-item class="form-input">
+          <img alt="icon" title="icon" class="form-input-icon" src="../assets/unlock.png">
+          <ion-input type="password"  placeholder="Password" inputmode="text"></ion-input>
+        </ion-item>
+                
+        <ion-button expand="block" class="full-button" [routerLink]="['/gateway']">          
+          Set Now 
+        </ion-button>
+      </form>         
+        <p class="center-text">Your process will going on</p>   
+      </IonCol>
+    </ion-row>
+  </ion-grid>
+      <ion-grid>
+        <ion-row class="process-panel">      
+          <ion-col>
+            <ion-avatar>
+              <ion-icon name="checkmark-outline"></ion-icon>
+            </ion-avatar>
+            <ion-lable>Connecting to the device</ion-lable>
+          </ion-col>
+          <ion-col>
+            <ion-avatar>
+              <ion-icon name="checkmark-outline"></ion-icon>
+            </ion-avatar>
+            <ion-lable>Settings of the router connection</ion-lable>
+          </ion-col>
+          <ion-col>
+            <ion-avatar>
+              <ion-icon name="checkmark-outline"></ion-icon>
+            </ion-avatar>
+            <ion-lable>Server Authentication</ion-lable>
+          </ion-col>
+          <ion-col>
+            <ion-avatar>
+              <ion-icon name="checkmark-outline"></ion-icon>
+            </ion-avatar>
+            <ion-lable>Configuraing mesh netword</ion-lable>
+          </ion-col>
+        </ion-row>
+      </ion-grid>  
+</ion-content>
+

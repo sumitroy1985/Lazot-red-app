@@ -1,0 +1,74 @@
+ion-content, ion-header {
+    --background: #000 !important;
+    background: #000;
+}
+ion-row{
+    height: 100%;
+    .register-panel{
+       width:100%;   
+       padding: 50px 20px 10px;       
+       form{
+           margin-top: 45px;
+       }
+       ion-item {
+           --padding-start: 0;
+           --inner-padding-end:0;
+           margin-bottom: 20px;
+           position: relative;
+           padding-top: 10px;
+           overflow: visible;
+           --inner-border-width: 0px;
+           --border-color:transparent;            
+        } 
+        
+        p.center-text {
+            font-size: 13px;
+            line-height: 16px;        
+            color: #fff;      
+            text-align: center;      
+        } 
+        .full-button {
+            border: 0;
+            margin: 0;
+            height: 62px;
+            width: 195px;
+            border-radius: 38.137px;
+            --border-radius: 38.137px;
+            font-size: 18px;
+            background: linear-gradient(180deg, #2D8DFF 16.67%, #0040E4 135.19%);
+            box-shadow: 0;
+            border-radius: 38.137px;
+            color: #fff;
+            margin: 110px auto 30px;
+            text-transform: capitalize;
+            letter-spacing: 0.16px;
+        }   
+        .full-button-withicon{
+            border: 1px solid #34374D;
+            height: 62px;
+            width: 195px;
+            border-radius: 38.137px;
+            margin: 0 auto;
+            --border-color:transparent;
+            --border-radius: 6px;
+            --padding-top: 0;
+            --padding-start: 0;
+            --padding-end: 0;
+            --padding-bottom: 0;
+            --border-width: 0;
+            font-size: 14px;
+            line-height: 16px;               
+            color: #fff;
+            --background-activated: transparent;
+            --background-focused: transparent;
+            --background-hover: transparent;
+            
+        }     
+    }
+    
+    
+}
+.image-center{
+    margin: 30px auto;
+    display: flex;
+  }

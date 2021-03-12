@@ -1,0 +1,26 @@
+<ion-header>
+	<div class="new-header">
+		<ion-toolbar>			
+				<span class="back" [routerLink]="['/gateway']"><ion-icon name="arrow-back-outline"></ion-icon></span>
+				<span class="filter"><ion-icon name="notifications"></ion-icon> </span>			
+		</ion-toolbar>
+	</div>
+</ion-header>
+ 
+<ion-content>
+  <ion-grid class="page-content gateway-onboard"> 
+    <ion-row>
+      <ion-card>
+        <ion-card-title>Gateway Onboarding</ion-card-title>
+        <img alt="sensor" title="sensor" src="../assets/kitchen.png">
+        <p>Disconnect Wifi and connect Gateway</p>
+      </ion-card>      
+    </ion-row>
+    <ion-row class="onboarding-bottom">
+      <p>If the <strong>Lights On,</strong> Press next Button</p>
+      <ion-button expand="block" class="full-button" [routerLink]="['/gateway-configuration']">          
+        Next <ion-icon name="arrow-forward-outline"></ion-icon>
+      </ion-button>
+    </ion-row>
+  </ion-grid>    
+</ion-content>

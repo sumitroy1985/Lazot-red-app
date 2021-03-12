@@ -1,0 +1,39 @@
+<ion-content>
+  <ion-grid class="">
+    <!--LOGO PANEL START-->
+    <ion-row>
+      <IonCol size="12" size-sm class="register-panel">
+        <p class="text-center">Login your account</p>
+        <form [formGroup]="signupForm">
+        <ion-item class="form-input">
+          <img alt="icon" title="icon" class="form-input-icon" src="../assets/user.png">          
+          <ion-input type="text" placeholder="Name" inputmode="text"></ion-input>
+        </ion-item>
+        <ion-item class="form-input"> 
+          <img alt="icon" title="icon" class="form-input-icon" src="../assets/unlock.png"> 
+          <ion-input type="password" placeholder="Only Pin" inputmode="text"></ion-input>
+        </ion-item>
+        <div class="text-border-section">
+          <p class="center-text" [routerLink]="['/login']">Use Fingerprint / Pattern</p>          
+          <p class="border-middle"></p>
+          <p>Or Login with</p>
+        </div>
+        <ion-button expand="full" fill="outline" class="full-button-withicon" [routerLink]="['/gateway']">
+          <img alt="sensor" title="sensor" src="../assets/google-icon.png">
+          Sign in with google
+        </ion-button>
+        <ion-button expand="full" fill="outline" class="full-button-withicon" [routerLink]="['/gateway']">
+          <img alt="sensor" title="sensor" src="../assets/facebook-icon.png">
+          Sign in with Facebook
+        </ion-button>
+        <ion-button expand="full" fill="outline" class="full-button-noicon" [routerLink]="['/new-user-register']">          
+          Create an account?
+        </ion-button>
+        <ion-button expand="block" class="full-button" [routerLink]="['/gateway']">          
+          Submit 
+        </ion-button>
+      </form>
+      </IonCol>
+    </ion-row>
+  </ion-grid>    
+</ion-content>
