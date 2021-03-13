@@ -54,6 +54,10 @@ const routes: Routes = [
   {
     path: 'splash-screen',
     loadChildren: () => import('./splash-screen/splash-screen.module').then( m => m.SplashScreenPageModule)
+  },
+  {
+    path: 'home-sidemenu',
+    loadChildren: () => import('./home-sidemenu/home-sidemenu.module').then( m => m.HomeSidemenuPageModule)
   }
 ];
 
